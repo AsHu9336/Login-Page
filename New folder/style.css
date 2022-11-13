@@ -1,0 +1,114 @@
+/* ===== =====>>  Timeline & About Css Start  <<===== ===== */
+.timeline_about {
+    padding: var(--p-2-5);
+  }
+  
+  .timeline_about .tabs ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--m-2-5);
+  }
+  
+  .timeline_about .tabs ul::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--bg7-color);
+  }
+  
+  .timeline_about .tabs ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: var(--m-2-5);
+    padding-bottom: var(--p-0-8);
+    cursor: pointer;
+  }
+  
+  .timeline_about .tabs ul li span {
+    font-size: var(--l-fs);
+    font-weight: 500;
+  }
+  
+  .timeline_about .tabs ul li .ri {
+    margin-right: var(--m-0-5);
+  }
+  
+  .timeline_about .tabs ul .active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--bg5-color);
+  }
+  
+  .timeline_about .contact_info .heading,
+  .timeline_about .basic_info .heading {
+    font-size: var(--xs-fs);
+    color: var(--f4-color);
+    text-transform: uppercase;
+    margin-bottom: var(--m-1-5);
+  }
+  
+  .timeline_about .contact_info ul,
+  .timeline_about .basic_info ul {
+    margin-bottom: var(--m-1-5);
+  }
+  
+  .timeline_about .contact_info ul li,
+  .timeline_about .basic_info ul li {
+    display: flex;
+    margin: var(--m-0-5) 0;
+  }
+  
+  .timeline_about .contact_info ul li h1,
+  .timeline_about .basic_info ul li h1 {
+    font-weight: 500;
+    font-size: var(--m-fs);
+    min-width: 12rem;
+  }
+  
+  .timeline_about .contact_info ul li span,
+  .timeline_about .basic_info ul li span {
+    font-size: var(--m-fs);
+  }
+  
+  .timeline_about .contact_info ul .phone span,
+  .timeline_about .contact_info ul .email span,
+  .timeline_about .contact_info ul .site span {
+    color: var(--f5-color);
+  }
+
+
+
+
+  .timeline_about {
+    grid-area: timeline_about;
+  }
+
+
+
+  .work_skills .work .heading,
+.work_skills .skills .heading {
+  position: relative;
+  font-size: var(--xs-fs);
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  margin-bottom: var(--m-1-5);
+}
+
+.work_skills .work .heading::before,
+.work_skills .skills .heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0.1rem;
+  width: 88%;
+  background: var(--bg6-color);
+}
